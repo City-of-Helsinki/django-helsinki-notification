@@ -5,6 +5,7 @@ import pytest
 from django.utils import timezone
 from pytest_factoryboy import register
 
+from helsinki_notification import constants
 from tests.factories import NotificationFactory, ValidNotificationFactory
 
 register(NotificationFactory)
@@ -63,3 +64,8 @@ def make_relative_time():
         return RelativeTime(*args, **kwargs)
 
     return _make_relative_time
+
+
+@pytest.fixture
+def languages():
+    return constants.LANGUAGES
