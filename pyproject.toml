@@ -56,6 +56,10 @@ all = ["django-helsinki-notification[rest_framework]", "django-helsinki-notifica
 Homepage = "https://github.com/City-of-Helsinki/django-helsinki-notification"
 Issues = "https://github.com/City-of-Helsinki/django-helsinki-notification/issues"
 
+[tool.coverage.run]
+source = ["helsinki_notification"]
+omit = ["**/migrations/*"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["helsinki_notification"]
 
