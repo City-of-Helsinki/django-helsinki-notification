@@ -40,3 +40,14 @@ def test_type_name_field(valid_notification_factory):
     notification = valid_notification_factory.build(type=Notification.Type.INFO)
     serializer = NotificationSerializer(instance=notification)
     assert serializer.data["type_name"] == "INFO"
+
+
+@pytest.mark.parametrize(
+    "field_name", ["title", "content", "external_url", "external_url_title"]
+)
+def test_translated_fields(field_name, notification_factory, languages):
+    fields = {f"{field_name}_{lang}": lang for lang in languages}
+    notification = notification_factory.build(**fields)
+    serializer = NotificationSerializer(instance=notification)
+    for lang in languages:
+        assert serializer.data[field_name][lang] == lang

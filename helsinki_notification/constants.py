@@ -1,0 +1,1 @@
+LANGUAGES = ("fi", "sv", "en")

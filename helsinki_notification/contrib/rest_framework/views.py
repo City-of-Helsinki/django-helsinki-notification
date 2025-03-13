@@ -1,10 +1,15 @@
 from rest_framework import serializers
 from rest_framework.generics import ListAPIView
 
+from helsinki_notification.contrib.rest_framework.fields import TranslatedField
 from helsinki_notification.models import Notification
 
 
 class NotificationSerializer(serializers.ModelSerializer):
+    content = TranslatedField()
+    external_url = TranslatedField()
+    external_url_title = TranslatedField()
+    title = TranslatedField()
     type_name = serializers.SerializerMethodField()
 
     class Meta:
@@ -13,18 +18,10 @@ class NotificationSerializer(serializers.ModelSerializer):
             "id",
             "modified_at",
             "type_name",
-            "title_fi",
-            "title_sv",
-            "title_en",
-            "content_fi",
-            "content_sv",
-            "content_en",
-            "external_url_fi",
-            "external_url_sv",
-            "external_url_en",
-            "external_url_title_fi",
-            "external_url_title_sv",
-            "external_url_title_en",
+            "title",
+            "content",
+            "external_url",
+            "external_url_title",
         ]
 
     def get_type_name(self, obj):
