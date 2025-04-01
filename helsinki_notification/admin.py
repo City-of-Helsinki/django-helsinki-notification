@@ -7,6 +7,15 @@ from helsinki_notification.models import Notification
 @admin.register(Notification)
 class NotificationAdmin(admin.ModelAdmin):
     list_display = ["__str__", "type", "validity_period_start", "validity_period_end"]
+    list_filter = ["type"]
+    search_fields = [
+        "title_fi",
+        "content_fi",
+        "title_sv",
+        "content_sv",
+        "title_en",
+        "content_en",
+    ]
     readonly_fields = ["created_at", "modified_at"]
     fieldsets = [
         (
