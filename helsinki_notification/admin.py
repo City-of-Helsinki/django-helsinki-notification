@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.translation import get_language
 from django.utils.translation import gettext as _
 
 from helsinki_notification.models import Notification
@@ -6,7 +7,6 @@ from helsinki_notification.models import Notification
 
 @admin.register(Notification)
 class NotificationAdmin(admin.ModelAdmin):
-    list_display = ["__str__", "type", "validity_period_start", "validity_period_end"]
     list_filter = ["type"]
     search_fields = [
         "title_fi",
@@ -59,3 +59,17 @@ class NotificationAdmin(admin.ModelAdmin):
             },
         ),
     ]
+
+    def get_list_display(self, *_):
+        list_display = ["type", "validity_period_start", "validity_period_end"]
+
+        # Add a locale-appropriate title.
+        lang = get_language()
+        if lang.startswith("fi"):
+            list_display = ["title_fi", *list_display]
+        elif lang.startswith("sv"):
+            list_display = ["title_sv", *list_display]
+        else:
+            list_display = ["title_en", *list_display]
+
+        return list_display
