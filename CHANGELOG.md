@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.2.0...v0.3.0) (2025-04-22)
+
+
+### Features
+
+* Add search and type filter in admin list view ([b8f6be0](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/b8f6be085638cefc9c82f299c62520909dcd83ca))
+* Order notifications by title ([2e326f7](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/2e326f7122967d056c5c148159d361713c30256d))
+
 ## [0.2.0](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/django-helsinki-notification-v0.1.0...django-helsinki-notification-v0.2.0) (2025-03-13)
 
 
