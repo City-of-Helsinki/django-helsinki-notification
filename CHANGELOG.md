@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.3.0...v0.3.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* Make release-please update package version ([d459100](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/d459100bba246331c6961eed867b4b192467bbfb))
+
 ## [0.3.0](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.2.0...v0.3.0) (2025-04-22)
 
 
