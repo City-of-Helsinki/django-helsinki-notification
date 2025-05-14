@@ -3,7 +3,7 @@
   "packages": {
     ".": {
       "release-type": "python",
-      "package-name": "helsinki-notification",
+      "package-name": "django-helsinki-notification",
       "exclude-paths": ["tests"],
       "include-component-in-tag": false,
       "changelog-sections": [
