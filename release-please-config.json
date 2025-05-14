@@ -5,6 +5,9 @@
       "release-type": "python",
       "package-name": "django-helsinki-notification",
       "exclude-paths": ["tests"],
+      "extra-files": [
+        "helsinki_notification/__init__.py"
+      ],
       "include-component-in-tag": false,
       "changelog-sections": [
         {"type": "feat", "section": "Features"},
