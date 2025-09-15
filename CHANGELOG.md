@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.4.0](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.3.1...v0.4.0) (2025-09-15)
+
+
+### Features
+
+* Add finnish and english translations ([6827f73](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/6827f732eb606adf0c4beb5b2b49579f08793473))
+
+
+### Bug Fixes
+
+* Fix incompatible method override ([cf53c9c](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/cf53c9cbc119fce22a119e4cb34de75d944c4e7d))
+
+
+### Documentation
+
+* Update README ([5245005](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/52450055178dcfc1b9e66bfbe3a93a51144baf96))
+* Update README ([53579f3](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/53579f37fba67591dc6fda08a5f4526550fba875))
+
 ## [0.3.1](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.3.0...v0.3.1) (2025-05-14)
 
 
