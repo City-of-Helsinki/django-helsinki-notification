@@ -101,7 +101,7 @@ class Notification(models.Model):
     def clean(self):
         if self.validity_period_start >= self.validity_period_end:
             raise ValidationError(
-                "The validity period's start must occur before its end."
+                _("The validity period's start must occur before its end.")
             )
 
     @property

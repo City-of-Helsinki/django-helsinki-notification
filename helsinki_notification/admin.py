@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import get_language
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 from helsinki_notification.models import Notification
 
