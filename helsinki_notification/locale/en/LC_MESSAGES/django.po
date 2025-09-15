@@ -1,0 +1,131 @@
+# English translations
+# Copyright (C) 2025 City of Helsinki
+# This file is distributed under the same license as the helsinki_notification package.
+# Daniel Prange <daniel.prange@anders.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-10 09:58+0300\n"
+"PO-Revision-Date: 2025-09-12 09:22+0300\n"
+"Last-Translator: Daniel Prange <daniel.prange@anders.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: helsinki_notification/admin.py:22
+msgid "Notification details"
+msgstr "Notification details"
+
+#: helsinki_notification/admin.py:36
+msgid "External URL"
+msgstr "External URL"
+
+#: helsinki_notification/admin.py:49
+msgid "Validity period"
+msgstr "Validity period"
+
+#: helsinki_notification/admin.py:53
+msgid "System fields"
+msgstr "System fields"
+
+#: helsinki_notification/apps.py:8
+msgid "Notifications"
+msgstr "Notifications"
+
+#: helsinki_notification/models.py:21
+msgid "Information"
+msgstr "Information"
+
+#: helsinki_notification/models.py:22
+msgid "Alert"
+msgstr "Alert"
+
+#: helsinki_notification/models.py:23
+msgid "Error"
+msgstr "Error"
+
+#: helsinki_notification/models.py:26
+msgid "Creation time"
+msgstr "Creation time"
+
+#: helsinki_notification/models.py:29
+msgid "Modification time"
+msgstr "Modification time"
+
+#: helsinki_notification/models.py:31
+msgid "Valid from"
+msgstr "Valid from"
+
+#: helsinki_notification/models.py:32
+msgid "Valid until"
+msgstr "Valid until"
+
+#: helsinki_notification/models.py:36
+msgid "Notification type"
+msgstr "Notification type"
+
+#: helsinki_notification/models.py:40
+msgid "Title (Finnish)"
+msgstr "Title (Finnish)"
+
+#: helsinki_notification/models.py:41
+msgid "Title (Swedish)"
+msgstr "Title (Swedish)"
+
+#: helsinki_notification/models.py:42
+msgid "Title (English)"
+msgstr "Title (English)"
+
+#: helsinki_notification/models.py:45
+msgid "Content (Finnish)"
+msgstr "Content (Finnish)"
+
+#: helsinki_notification/models.py:46
+msgid "Content (Swedish)"
+msgstr "Content (Swedish)"
+
+#: helsinki_notification/models.py:47
+msgid "Content (English)"
+msgstr "Content (English)"
+
+#: helsinki_notification/models.py:51
+msgid "External URL (Finnish)"
+msgstr "External URL (Finnish)"
+
+#: helsinki_notification/models.py:54
+msgid "External URL (Swedish)"
+msgstr "External URL (Swedish)"
+
+#: helsinki_notification/models.py:57
+msgid "External URL (English)"
+msgstr "External URL (English)"
+
+#: helsinki_notification/models.py:64
+msgid "External URL title (Finnish)"
+msgstr "External URL title (Finnish)"
+
+#: helsinki_notification/models.py:69
+msgid "External URL title (Swedish)"
+msgstr "External URL title (Swedish)"
+
+#: helsinki_notification/models.py:74
+msgid "External URL title (English)"
+msgstr "External URL title (English)"
+
+#: helsinki_notification/models.py:82
+msgid "notification"
+msgstr "notification"
+
+#: helsinki_notification/models.py:83
+msgid "notifications"
+msgstr "notifications"
+
+#: helsinki_notification/models.py:104
+msgid "The validity period's start must occur before its end."
+msgstr "The validity period's start must occur before its end."
