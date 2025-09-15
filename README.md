@@ -119,6 +119,7 @@ def my_custom_notification_list(request):
 Access the admin page with username `admin` and password `admin` in
 http://localhost:8000/admin.
 
+
 ## 🧪 Testing
 
 Run the tests with:
@@ -130,6 +131,17 @@ Test all environments in the matrix with:
 ```shell
 hatch test -a
 ```
+
+
+## ⚡ Available Hatch scripts
+
+The default environment has the following scripts available:
+
+| Script | Description | Example Usage |
+|--------|-------------|---------------|
+| `hatch run test <args>` | Run pytest directly | `hatch run test -k notification` |
+| `hatch run lint` | Install and run pre-commit hooks | `hatch run lint` |
+| `hatch run manage <args>` | Run Django management commands | `hatch run manage makemigrations`<br>`hatch run manage runserver` |
 
 
 [hatch-url]: https://hatch.pypa.io/latest/install/
