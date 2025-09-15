@@ -60,7 +60,7 @@ class NotificationAdmin(admin.ModelAdmin):
         ),
     ]
 
-    def get_list_display(self, *_):
+    def get_list_display(self, *_, **__):
         list_display = ["type", "validity_period_start", "validity_period_end"]
 
         # Add a locale-appropriate title.
