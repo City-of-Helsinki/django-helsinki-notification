@@ -8,7 +8,7 @@ version = "0.4.0"
 authors = [{ name = "City of Helsinki", email = "dev@hel.fi" }]
 description = "Notifications for City of Helsinki Django apps 🔔"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = [
     "django",
 ]
@@ -24,11 +24,11 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Internet :: WWW/HTTP",
 ]
 license = "MIT"
@@ -68,7 +68,7 @@ dependencies = [
     "pre-commit",
 ]
 features = ["all"]
-python = "3.9"
+python = "3.10"
 
 [tool.hatch.envs.default.scripts]
 test = "pytest {args}"
@@ -86,16 +86,16 @@ parallel = false
 randomize = true
 
 [[tool.hatch.envs.hatch-test.matrix]]
-python = ["3.9"]
-django = ["4.2"]
-
-[[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.10", "3.11", "3.12"]
 django = ["4.2", "5.1", "5.2"]
 
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.13"]
 django = ["5.1", "5.2"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.14"]
+django = ["5.2"]
 
 [tool.hatch.envs.hatch-test.overrides]
 matrix.django.dependencies = [
@@ -120,7 +120,7 @@ DJANGO_SETTINGS_MODULE = "tests.settings"
 pythonpath = "."
 
 [tool.ruff]
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = [
