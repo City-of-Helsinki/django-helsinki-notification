@@ -1,11 +1,11 @@
-from typing import Collection, Union
+from collections.abc import Collection
 
 from django.db.models import QuerySet
 
 from helsinki_notification.models import Notification
 
 
-def values_list(objects: Union[Collection, QuerySet[Notification]], *fields: str):
+def values_list(objects: Collection | QuerySet[Notification], *fields: str):
     flat = len(fields) == 1
     if isinstance(objects, QuerySet):
         return objects.values_list(*fields, flat=flat)
