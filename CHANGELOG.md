@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.4.0...v0.4.1) (2025-10-31)
+
+
+### Dependencies
+
+* Drop support for py3.9, add support for 3.14 ([d693ea9](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/d693ea933aad7999fa53af38c6e904ba3576b2ca))
+
 ## [0.4.0](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.3.1...v0.4.0) (2025-09-15)
 
 
