@@ -42,12 +42,8 @@ test = [
     "pytest-factoryboy",
     "factory_boy",
     "freezegun",
-    "coverage-enable-subprocess",
     "coverage[toml]",
     "pytest-mock",
-    "pytest-randomly",
-    "pytest-rerunfailures",
-    "pytest-xdist[psutil]",
 ]
 rest_framework = ["djangorestframework"]
 all = ["django-helsinki-notification[rest_framework]", "django-helsinki-notification[test]"]
