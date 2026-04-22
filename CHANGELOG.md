@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.4.1...v0.4.2) (2026-04-22)
+
+
+### Dependencies
+
+* Drop support for django 4.2, 5.1, add 6.0 support ([a09a663](https://github.com/City-of-Helsinki/django-helsinki-notification/commit/a09a663d26c99f44445a1b2998c2a0577df4d2a5))
+
 ## [0.4.1](https://github.com/City-of-Helsinki/django-helsinki-notification/compare/v0.4.0...v0.4.1) (2025-10-31)
 
 
