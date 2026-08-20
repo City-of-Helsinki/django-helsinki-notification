@@ -44,7 +44,8 @@ test = [
     "coverage[toml]",
     "pytest-mock",
 ]
-rest_framework = ["djangorestframework"]
+# djangorestframework>=3.18.0 is required for Django 6.0 support (removed django.utils.cache.cc_delim_re usage)
+rest_framework = ["djangorestframework>=3.18.0"]
 all = ["django-helsinki-notification[rest_framework]", "django-helsinki-notification[test]"]
 
 [project.urls]
@@ -138,4 +139,4 @@ select = [
 ]
 
 [tool.uv]
-exclude-newer = "14 days"
+exclude-newer = "P3D"
