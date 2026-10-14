@@ -18,6 +18,12 @@ repos:
     hooks:
       - id: pyupgrade
         args: ["--py311-plus"]
+  - repo: https://github.com/adamchainz/django-upgrade
+    rev: 1.33.0
+    hooks:
+      - id: django-upgrade
+        stages: [manual]
+        args: ["--target-version=6.1"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.9.3
     hooks:
