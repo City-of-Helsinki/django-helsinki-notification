@@ -31,7 +31,7 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICENSE"]
-dependencies = ["django>=4.2",]
+dependencies = ["django>=5.2",]
 
 [project.optional-dependencies]
 test = [
