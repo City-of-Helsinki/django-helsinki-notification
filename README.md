@@ -16,7 +16,7 @@ apps.
 # 📋 Requirements
 
 - Python 3.11+
-- Django 5.2, 6.0
+- Django 5.2, 6.0, 6.1
 
 
 # 🛠️ Installation

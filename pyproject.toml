@@ -17,6 +17,7 @@ classifiers = [
     "Framework :: Django",
     "Framework :: Django :: 5.2",
     "Framework :: Django :: 6.0",
+    "Framework :: Django :: 6.1",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -43,7 +44,7 @@ test = [
     "coverage[toml]",
     "pytest-mock",
 ]
-# djangorestframework>=3.18.0 is required for Django 6.0 support (removed django.utils.cache.cc_delim_re usage)
+# djangorestframework>=3.18.0 is required for Django 6.0+ support (removed django.utils.cache.cc_delim_re usage)
 rest_framework = ["djangorestframework>=3.18.0"]
 all = ["django-helsinki-notification[rest_framework]", "django-helsinki-notification[test]"]
 
@@ -91,7 +92,7 @@ django = ["5.2"]
 
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.12", "3.13", "3.14"]
-django = ["5.2", "6.0"]
+django = ["5.2", "6.0", "6.1"]
 
 [tool.hatch.envs.hatch-test.overrides]
 matrix.django.dependencies = [
